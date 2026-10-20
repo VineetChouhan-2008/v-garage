@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090c">
+  <meta name="description" content="V / GARAGE — a personal automotive collection celebrating dream cars, performance, and design.">
+  <title>V / GARAGE — Driven by Passion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo" aria-label="V Garage home">V <span>/ GARAGE</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#garage">Dream Garage</a><a href="#contact">Contact</a>
+    </nav>
+    <a href="#garage" class="nav-cta">EXPLORE <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> AUTOMOTIVE ENTHUSIAST</p>
+        <h1>DRIVEN BY<br>PASSION.<br><span>BUILT FOR THE ROAD.</span></h1>
+        <p class="hero-description">A personal space for legendary machines, timeless design and the thrill of everything automotive.</p>
+        <div class="hero-actions">
+          <a href="#garage" class="btn">EXPLORE THE GARAGE <span>↗</span></a>
+          <a href="#about" class="text-link">MY STORY <span>↓</span></a>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>PERFORMANCE. DESIGN. PASSION.</span><a href="#about">SCROLL TO DISCOVER ↓</a></div>
+      <div class="hero-index">01 <span>/ 04</span></div>
+    </section>
+
+    <section class="section about-section reveal" id="about">
+      <div class="section-label"><span class="eyebrow">01 / THE STORY</span><span class="label-line"></span></div>
+      <div class="about-grid">
+        <div><h2>MORE THAN<br>JUST <span>MACHINES.</span></h2></div>
+        <div class="about-copy">
+          <p class="lead">Every car has a character. Every design has a story.</p>
+          <p>Hey! I'm a student, an aspiring developer, and a car lover. I created V / GARAGE to celebrate the cars that inspire me, explore automotive design, and bring my passion for cars and coding together.</p>
+          <a href="#garage" class="text-link">DISCOVER MY COLLECTION ↗</a>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong id="stat-car-count">100+</strong><span>CARS TO DISCOVER</span></div>
+        <div class="stat"><strong>∞</strong><span>DREAM CARS</span></div>
+        <div class="stat"><strong>01</strong><span>PASSION PROJECT</span></div>
+      </div>
+    </section>
+
+    <section class="section garage-section" id="garage">
+      <div class="section-label reveal"><span class="eyebrow">02 / THE COLLECTION</span><span class="label-line"></span></div>
+      <div class="section-heading reveal">
+        <div><h2>THE DREAM<br><span>GARAGE.</span></h2><p class="section-subtitle">Machines that make us look twice.</p></div>
+        <span class="collection-count" id="collection-count">COLLECTION — 100 CARS</span>
+      </div>
+
+      <div class="garage-tools reveal">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="car-search" type="search" placeholder="Search your dream car..." aria-label="Search cars"></label>
+        <div class="filter-list" aria-label="Filter cars by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">ALL CARS</button>
+          <button class="filter-btn" data-filter="sports" aria-pressed="false">SPORTS</button>
+          <button class="filter-btn" data-filter="street" aria-pressed="false">STREET</button>
+          <button class="filter-btn" data-filter="supercar" aria-pressed="false">SUPERCARS</button>
+          <button class="filter-btn" data-filter="jdm" aria-pressed="false">JDM</button>
+          <button class="filter-btn" data-filter="suv" aria-pressed="false">SUV</button>
+          <button class="filter-btn" data-filter="favorites" aria-pressed="false">♡ FAVOURITES</button>
+        </div>
+      </div>
+      <p id="results-status" class="results-status" aria-live="polite">Loading cars…</p>
+      <div class="car-grid" id="car-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <h3>NO CARS FOUND</h3><p>Try another search or choose a different category.</p>
+        <button id="reset-filters" class="btn" type="button">RESET FILTERS ↻</button>
+      </div>
+      <div class="load-more-wrap"><button id="load-more" class="btn secondary-btn" type="button">LOAD MORE CARS ↓</button></div>
+      <p class="garage-note">THE COLLECTION IS PERSONAL. THE PASSION IS UNIVERSAL.</p>
+    </section>
+
+    <section class="quote-section reveal">
+      <span class="quote-mark">“</span><p>FOUR WHEELS MOVE THE BODY.<br><span>PASSION MOVES THE SOUL.</span></p><span class="quote-caption">THE V / GARAGE PHILOSOPHY</span>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-label reveal"><span class="eyebrow">03 / GET IN TOUCH</span><span class="label-line"></span></div>
+      <div class="contact-content reveal">
+        <p class="eyebrow">FELLOW CAR ENTHUSIASTS, THIS IS FOR YOU.</p>
+        <h2>LET'S TALK<br><span>ABOUT CARS.</span></h2>
+        <p>Got a dream car, a favourite build, or an idea for this project? Let's connect.</p>
+        <a href="mailto:YOUR_EMAIL@example.com" class="btn">CONTACT ME <span>↗</span></a>
+        <p class="email-note">Tip: replace YOUR_EMAIL@example.com in index.html with your email address.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#home" class="logo">V <span>/ GARAGE</span></a><p>BUILT WITH PASSION &amp; CODE.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year"></span> V / GARAGE. A PERSONAL PROJECT.</small>
+  </footer>
+  
+<!-- CINEMATIC CAR DETAILS POPUP -->
+<div class="car-modal" id="car-modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+
+  <section class="modal-panel" role="dialog"
+    aria-modal="true" aria-labelledby="modal-car-name">
+
+    <button class="modal-close" data-close-modal
+      type="button" aria-label="Close popup">×</button>
+
+    <div class="modal-photo">
+      <img id="modal-car-image" src="" alt="Selected car">
+    </div>
+
+    <div class="modal-content">
+      <p class="modal-label">V / GARAGE — DREAM MACHINE</p>
+
+      <h2 id="modal-car-name">Car Name</h2>
+
+      <p id="modal-car-description" class="modal-description"></p>
+
+      <div class="spec-grid" id="modal-car-specs"></div>
+
+      <p class="spec-note">
+        Specifications may vary by model year and variant.
+      </p>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
